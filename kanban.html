@@ -1,0 +1,100 @@
+<head>
+    <style>
+
+        body{
+            margin:0;
+        }
+
+        p{
+            width:100%;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            flex:1;
+            margin-left: 30px;
+            margin-right: 30px;
+            margin-top: 15px;
+        }
+
+        .container > div{
+            display:inline;
+            flex-direction: row;
+            flex:1;
+        }
+
+
+        .text-area{
+            display:flex;
+            height:100px;
+            width:80%;
+            max-width:100%;
+            margin:0;
+            resize: vertical;
+        }
+
+        .button{
+            display:flex;
+
+            margin:0;
+            width:20%;
+            
+        }
+
+        .header{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            color:white;
+            font-size: 14px;
+            text-align: center;
+            height:30px;
+        }
+
+
+        h1{
+            margin:0;
+        }
+
+        .items{
+            display:flex;
+            text-align: center;
+            line-height: 40px;
+            background-color:rgb(235, 235, 235);
+            height:40px;
+            position:relative;   
+        }
+        
+        .items > div{
+            width:100%;
+        }
+
+        .items p{
+            line-height: 50%;
+        }
+
+        .inputs{
+            display:flex;
+        }
+
+        .undo{
+            position:fixed;
+            right:0;
+            bottom:0;
+            height:100px;
+            width:100px;
+        }
+
+  
+    </style>
+</head>
+<body>`
+    <div class="container">
+        <button class="undo">UNDO</button>
+    </div>
+
+    
+    <script src="kanban.js"></script>
+</body>
